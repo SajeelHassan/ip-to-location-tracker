@@ -120,3 +120,6 @@ margin: 0;
     font-weight: 600;
     color:hsl(0, 0%, 17%);
 }
+.btn{
+    cursor: pointer;
+}
