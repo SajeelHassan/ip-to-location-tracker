@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+body{
+    margin: 0;
+    /* overflow: scroll; */
+  
+}
+#mapid {
+    width: 100vw;
+    height: 70vh;
+    /* z-index: -1; */
+}
+.header{
+    padding: 0;
+    width: 100vw;
+    height: 30vh;;
+    background-image: url("./images/pattern-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.heading{
+color:white;
+font-size: larger;
+font-weight: 600;
+margin: 0;
+}
+.mg-center{
+    margin: 0 auto;
+}
+.mg-top{
+    margin-top:25px;
+}
+.header>div{
+
+}
+.d-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.f-row{
+    flex-direction: row;
+    justify-content: space-around;
+}
+.search-area input{
+    width:340px;
+    height:41px;
+    /* border-style: none; */
+    border:none;
+    border-radius: 10px;
+    outline: none;
+    padding: 10px;
+    padding-left: 18px;
+    color:hsl(0, 0%, 17%);
+}
+.search-area span{
+    
+    background-color: black;
+    padding: 11px;
+    padding-left:  15px;
+    padding-right: 15px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-left: -10px;
+}
+/* extra margin for a problem */
+.heading {
+    padding-top: 50px;
+
+}
+.info-cards{
+    max-width: 800px;
+    background-color:white;
+    border-radius: 10px;
+    z-index: 500;
+    position: relative;
+    top:15%;
+    /* left:12.5%; */
+    /* visibility: hidden; */
+    
+}
+.info{
+    margin-left: -20px;
+    padding:20px;
+    padding-right: 10px;
+    
+}
+.info-card{
+    width:60vw;
+    height:60px;
+    margin:20px;
+    
+    border-left:rgba(0, 0, 0, 0.096) 1px solid;
+
+}
+.info-card:nth-of-type(1){
+    border-left:none;
+    
+}
+.info-card span{
+    position: relative;
+    left:15px;
+    text-align: left;
+}
+
+.info-title{
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color:hsl(0, 0%, 59%);
+    position: relative;
+    top:-5px;
+}
+.info-details{
+    font-weight: 600;
+    color:hsl(0, 0%, 17%);
+}
