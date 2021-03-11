@@ -11,20 +11,52 @@
         <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
             integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
             crossorigin=""></script>
+        <link rel="stylesheet" href="./style.css">
         <title>IP Tracker</title>
     </head>
-    <style>
-        #mapid {
-            width: 180px;
-        }
 
-    </style>
-    <!-- mapbox://styles/sajeel01/ckm3sct66cftk17p6uehfet7r -->
+
 
     <body>
-        <main>
+        <main class='main'>
+            <div class="header d-flex">
+                <div class="heading mg-center mg-top">
+                    <p class='heading_h2'>IP Address Tracker</p>
+                </div>
+                <div class="search-area mg-center mg-top">
+                    <input type="text" class="search-input" placeholder="Search for any IP address or domain">
+                    <span class="arrow-icon"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="13">
+                            <path fill="none" stroke="#FFF" stroke-width="3" d="M2 1l6 6-6 6" />
+                        </svg></span>
+                </div>
+                <div class="info-cards mg-center mg-top ">
+                    <div class="info d-flex f-row">
+                        <div class="info-card ip-address-details">
+                            <span class='info-title'>IP ADDRESS</span><br>
+                            <span id='ip-address' class='info-details'>192.212.174.101</span>
+                        </div>
+                        <div class="info-card location-details">
+                            <span class='info-title'>LOCATION</span><br>
+                            <span id='location' class='info-details'>Brooklyn,NY<br>10001</span>
+                        </div>
+                        <div class="info-card timezone-details">
+                            <span class='info-title'>TIMEZONE</span><br>
+                            <span id='timezone' class='info-details'>UTC -05:00</span>
+                        </div>
+                        <div class="info-card isp-details">
+                            <span class='info-title'>ISP</span><br>
+                            <span id='isp' class='info-details'>SPACEX<br>Starlink</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
             <div id="mapid"></div>
         </main>
+
+
+
+
         <script src="api.js"></script>
         <script src="ui.js"></script>
         <script src="mapLib.js"></script>
