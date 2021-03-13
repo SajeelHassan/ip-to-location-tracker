@@ -18,14 +18,27 @@
 
 
     <body>
+        <div class="error shadow" id='error-div'>
+            <h3 id='errorText'></h3>
+        </div>
+        <div class="tracking" id='loading-results'>
+            <div class="tracking-gifs d-flex">
+                <span><br> <img src="./images/globe.gif" alt="" class='globe center'></span><br>
+                <span><img src="./images/load.gif" class='loading center' alt=""></span>
+                <br>
+            </div>
+        </div>
         <main class='main'>
+
             <div class="header d-flex">
                 <div class="heading mg-center mg-top">
                     <p class='heading_h2'>IP Address Tracker</p>
                 </div>
                 <div class="search-area mg-center mg-top">
-                    <input type="text" class="search-input" placeholder="Search for any IP address or domain">
-                    <span class="arrow-icon btn"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="13">
+                    <input type="text" class="search-input" placeholder="Search for any IP address or domain"
+                        id='ip-input'>
+                    <span class="arrow-icon btn" id='btn'><svg xmlns="http://www.w3.org/2000/svg" width="10"
+                            height="13">
                             <path fill="none" stroke="#FFF" stroke-width="3" d="M2 1l6 6-6 6" />
                         </svg></span>
                 </div>
@@ -33,19 +46,19 @@
                     <div class="info d-flex f-row">
                         <div class="info-card ip-address-details">
                             <span class='info-title'>IP ADDRESS</span><br>
-                            <span id='ip-address' class='info-details'>192.212.174.101</span>
+                            <span id='ip-address' class='info-details'></span>
                         </div>
                         <div class="info-card location-details">
                             <span class='info-title'>LOCATION</span><br>
-                            <span id='location' class='info-details'>Brooklyn,NY<br>10001</span>
+                            <span id='location' class='info-details'><br></span>
                         </div>
                         <div class="info-card timezone-details">
                             <span class='info-title'>TIMEZONE</span><br>
-                            <span id='timezone' class='info-details'>UTC -05:00</span>
+                            <span id='timezone' class='info-details'></span>
                         </div>
                         <div class="info-card isp-details">
                             <span class='info-title'>ISP</span><br>
-                            <span id='isp' class='info-details'>SPACEX<br>Starlink</span>
+                            <span id='isp' class='info-details'></span>
                         </div>
 
                     </div>
@@ -57,9 +70,9 @@
 
 
 
-        <script src="api.js"></script>
         <script src="ui.js"></script>
         <script src="mapLib.js"></script>
+        <script src="api.js"></script>
         <script src="main.js"></script>
     </body>
 
