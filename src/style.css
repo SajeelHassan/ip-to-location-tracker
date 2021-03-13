@@ -123,3 +123,62 @@ margin: 0;
 .btn{
     cursor: pointer;
 }
+
+
+.tracking-gifs{
+    width: 200px;
+    /* background-color: pink; */
+    margin:0 auto;
+    vertical-align: middle;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  .globe{
+      width:64px;
+  }
+  .loading{
+      width:150px;
+  }
+  .tracking{
+    /* background-color: black; */
+    width:100%;
+    /* padding: 20%; */
+    position: absolute;
+    top:50%;
+
+}
+.error{
+    position: absolute;
+    /* opacity: 1; */
+    top:5vh;
+    left:5vw;
+    width: 20vw;
+    height:10vh;
+    background-color: #fff;
+    color:red;
+    font-weight: 600;
+    border-radius: 20px;
+    box-shadow: ;
+    
+    
+}
+#errorText{
+    text-align: center;
+}
+#error-div{
+    display: none;
+    /* transition-property: opacity, left,top;
+    transition-duration: 2s, 4s; */
+      
+    
+}
+.shadow {
+    -webkit-box-shadow: 1px 2px 3px 4px rgba(0, 0, 0, 0.089); 
+    -moz-box-shadow:    1px 2px 3px 4px rgba(0, 0, 0, 0.089);  
+    box-shadow:         1px 2px 3px 4px rgba(0, 0, 0, 0.089);  
+  }
